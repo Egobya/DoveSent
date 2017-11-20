@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>customerform</title>
+</head>
+<body>
+<nav class=" navbar navbar-inverse=">
+    <div classes="container-fluid">
+    <a href="http://">
+<ul>Recover Your Money from Mortgage
+    and Tax Sales Surplus </ul>
+
+<ul>Recover your Assets</ul>
+
+<form action="#" th:action="@{/customerform}" th:object="${custome}"
+ method="post">
+</form>
+    <p> User information</p>
+    Username: <input type="text" th:field="*{name}" /><br />
+    Useremail: <input type=" text" th:field="*{email}"/><br />
+    Userphone: <input type="text" th:field="*{phone}"/><br />
+    <input type="submit" value="submit" />
+
+
+</div>
+</body>
+</html>
